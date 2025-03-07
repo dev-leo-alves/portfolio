@@ -21,7 +21,8 @@ export function ItemSidebarNav({ href, text }: IItemSidebarNavProps) {
       bg="gray.900"
       p="3"
       borderRadius="lg"
-      fontWeight="600"
+      textStyle="md"
+      fontWeight="500"
       onClick={scrollTo}
       transition="0.2s"
       _hover={{

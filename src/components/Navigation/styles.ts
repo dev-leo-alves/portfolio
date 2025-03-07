@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const ItemNavStyles = styled.button`
   color: var(--gray-50);
   font-size: 1.4rem;
-  font-family: 'JetBrains Mono';
+  font-family: 'JetBrains Mono', monospace;
   cursor: pointer;
   font-weight: 400;
 
@@ -23,7 +23,6 @@ const ItemNavStyles = styled.button`
     background: #fff;
     border-radius: 5rem;
     border: none;
-
     transition: 0.2s;
   }
 

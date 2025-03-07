@@ -9,10 +9,10 @@ export function SectionWelcome() {
       <Welcome>
         <Navigation />
         <div className="img-d-element" data-aos="zoom-in-left">
-          <Image src="./src/assets/images/mega-rayquaza.gif" alt="3D Rayquaza" />
+          {/* <Image src="./src/assets/images/mega-rayquaza.gif" alt="3D Rayquaza" /> */}
         </div>
 
-        <div className="content">
+        {/* <div className="content">
           <Text
             className="title-gradient"
             bgGradient='linear(to-l, #7928CA, #FF0080)'
@@ -28,7 +28,7 @@ export function SectionWelcome() {
           <h1 className="text-typing">
             Desenvolvendo soluções para o <strong>futuro...</strong>
           </h1>
-        </div>
+        </div> */}
       </Welcome>
     </>
   );

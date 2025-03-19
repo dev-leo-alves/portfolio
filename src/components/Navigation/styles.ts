@@ -7,7 +7,7 @@ const ItemNavStyles = styled.button`
   cursor: pointer;
   font-weight: 400;
 
-  /* text-shadow: 2px 4px 3px rgba(0,0,0,0.3); */
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 
   transition: 0.2s;
   
@@ -27,9 +27,9 @@ const ItemNavStyles = styled.button`
   }
 
   &:hover {
-    color: var(--cyan-500);
+    color: var(--emerald-500);
     hr {
-      background: var(--cyan-500);
+      background: var(--emerald-500);
       width: 100%;
     }
   }

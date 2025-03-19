@@ -26,8 +26,8 @@ export function ItemSidebarNav({ href, text }: IItemSidebarNavProps) {
       onClick={scrollTo}
       transition="0.2s"
       _hover={{
-        bg: 'cyan.500',
-        color: 'gray.900'
+        bg: '#589E7D',
+        color: 'white'
       }}
     >
       {text}

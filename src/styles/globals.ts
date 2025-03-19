@@ -23,10 +23,16 @@ export const GlobalStyle = createGlobalStyle`
 
     --cyan-500: #48CDD0;
 
+    --emerald-500: #589E7D;
+    --emerald-600: #408861;
+    --ruby-500: #CF6B76;
+    --gold-500: #FED269;
+
+
     --swiper-navigation-size: 22px;
-    --swiper-navigation-color: var(--cyan-500);
+    --swiper-navigation-color: var(--emerald-500);
     
-    --swiper-pagination-color: var(--cyan-500);
+    --swiper-pagination-color: var(--emerald-500);
     /* --swiper-pagination-bullet-size: 8px;
     --swiper-pagination-bullet-width: 8px;
     --swiper-pagination-bullet-height: 8px;
@@ -41,6 +47,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
   }
 
   html {
@@ -54,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     overflow-x: hidden;
-    background-color: var(--gray-900);
+    background-color: var(--gray-800);
   }
 
   button {
@@ -88,7 +95,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   ::-webkit-scrollbar-thumb {
-    background: var(--cyan-500);
+    background: var(--emerald-500);
     border-radius: 2rem;
   }
 `;

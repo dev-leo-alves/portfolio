@@ -44,16 +44,16 @@ export const Welcome = styled.main`
     
     h1 {
       font-family: 'JetBrains Mono', monospace;
-      z-index: 10000;
       font-size: 1.8rem;
       font-weight: 500;
-      color: var(--cyan-500);
+      color: var(--emerald-500);
 
       border-right: 2px solid white;
       white-space: nowrap;
       overflow: hidden;
 
-      animation: blinkCursor 0.8s steps(40) infinite normal, typing 6s steps(40) 1s infinite both;
+      animation: blinkCursor 0.8s step-end infinite, 
+                 typing 3s steps(40, end);
     }
 
     @keyframes typing {
@@ -61,16 +61,16 @@ export const Welcome = styled.main`
         width: 0;
       }
       to {
-        width: 43rem;
+        width: 100%;
       }
     } 
 
     @keyframes blinkCursor {
-      from {
-        border-right-color: white;
+      from, to { 
+        border-color: transparent 
       }
-      to {
-        border-right-color: transparent;
+      50% { 
+        border-color: white; 
       }
     }
   }
@@ -78,19 +78,18 @@ export const Welcome = styled.main`
   @media (min-width: 200px) and (max-width: 980px) {
     & {
       /* background-image: none; */
-      background-image: url('/images/welcome-bg.png');
+      /* background-image: url('/images/welcome-bg.png'); */
       
       .img-d-element {
-        display: none;
-        /* position: relative; */
-        left: 70px;
-        top: 40px;
-        width: 31rem;
+        margin-left: 4rem;
+        position:relative;
+        top: 0;
+        left: 0;
+        width: 18rem;
       }
       
       .content {
-        /* margin-top: 15rem; */
-        /* padding-left: 3rem; */
+        bottom: 7.5rem;
         width: 100%;
         position: relative;
 
@@ -98,7 +97,7 @@ export const Welcome = styled.main`
         align-items: center;
 
         > h1 {
-          font-size: 1rem;
+          font-size: 1.1rem;
         }
 
         @keyframes typing {

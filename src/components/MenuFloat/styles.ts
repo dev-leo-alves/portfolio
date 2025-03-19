@@ -24,7 +24,7 @@ export const MenuTools = styled.div`
   .button-tool, .button-toggle {
     width: 3rem;
     height: 3rem;
-    background-color: var(--cyan-500);
+    background-color: var(--emerald-500);
     color: var(--black-900);
     border-radius: 100%;
     display:flex;
@@ -35,7 +35,7 @@ export const MenuTools = styled.div`
     transition: 0.2s;
 
     &:hover {
-      background-color: var(--cyan-500);
+      background-color: var(--emerald-500);
       filter: brightness(0.9);
     }
   }

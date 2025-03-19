@@ -8,7 +8,7 @@ import {
   DrawerRoot,
   DrawerTrigger,
   DrawerCloseTrigger,
-} from "@/components/ui/drawer"
+} from "@/components/ui/drawer";
 
 import { FaIndent } from "react-icons/fa";
 import { ItemSidebarNav } from "./ItemSidebarNav";
@@ -37,7 +37,7 @@ export function SidebarNav() {
             px="4"
             top="0"
           >
-            <Button bg='cyan.500' size="lg" color="gray.900">
+            <Button bg='#589E7D' size="lg" color="white">
               <Icon as={FaIndent} />
             </Button>
           </Flex>
@@ -47,7 +47,8 @@ export function SidebarNav() {
             <DrawerHeader
               display="flex"
               flexDirection="row"
-              color="cyan.500"
+              color="#589E7D"
+ 
               fontSize="2xl"
             >
               <DrawerTitle  textStyle="2xl">Navegue</DrawerTitle>

@@ -1,9 +1,11 @@
-import { Text, Image, Box } from "@chakra-ui/react";
+import { Text, Image } from "@chakra-ui/react";
 import { Navigation } from "../../../components/Navigation";
-
+import { useTranslation } from "react-i18next";
 import { Welcome } from "./styles";
 
 export function SectionWelcome() {
+
+  const [t] = useTranslation("global");
   return (
     <>
       <Welcome>
@@ -27,7 +29,7 @@ export function SectionWelcome() {
             </Text>
 
             <h1 className="text-typing">
-              Criando inovações que moldam o <strong>futuro...</strong>
+              {t("section.welcome.subtitle.h1")} <strong>{t("section.welcome.subtitle.strong")}</strong>
             </h1>
         </div>
       </Welcome>

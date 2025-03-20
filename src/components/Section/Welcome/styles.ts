@@ -4,10 +4,20 @@ export const Welcome = styled.main`
   width: 100vw;
   min-height: 100vh;
   
-  background-image: url('/images/home3-bg.png');
+  /* background-image: url('/images/home3-bg.png'); */
   object-fit: cover;
 
   position: relative;
+
+  
+  @keyframes entry_content {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
 
   .img-d-element {
     background: transparent;
@@ -15,6 +25,7 @@ export const Welcome = styled.main`
     object-fit: cover;
     left: 60px;
     top: 100px;
+    animation: entry_content 6s normal both;
   }
 
   .content {
@@ -30,17 +41,9 @@ export const Welcome = styled.main`
     justify-content: center;
 
     .title-gradient {
-      animation: entry_title 6s normal both;
+      animation: entry_content 6s normal both;
     }
 
-    @keyframes entry_title {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
     
     h1 {
       font-family: 'JetBrains Mono', monospace;

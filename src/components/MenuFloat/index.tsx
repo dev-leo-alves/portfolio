@@ -12,9 +12,6 @@ interface IMenuFloatProps {
   isMenuOpen?: boolean;
 }
 
-
-  
-
 export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
   const [isOpen, setIsOpen] = useState(isMenuOpen);
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -74,8 +71,8 @@ export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
 
       <Button
         className="button-toggle"
-        bgColor="#48CDD0"
-        color="#171923"
+        bgColor="var(--emerald-500)"
+        color="var(--emerald-800)"
         boxShadow="lg"
         onClick={toggleMenu}
       >

@@ -1,9 +1,7 @@
-import { SectionWelcome } from './components/Section/Welcome';
-import { SectionAbout } from './components/Section/About';
-
+import { Sections } from './components/Sections';
 import { MenuFloat } from './components/MenuFloat';
 import { Flex } from '@chakra-ui/react';
-import { SectionSkills } from './components/Section/Skills';
+import { Footer } from './components/Footer';
 
 
 function App() {
@@ -12,11 +10,8 @@ function App() {
     <>
       <Flex direction="column">
         <MenuFloat/>
-        <SectionWelcome />
-        <SectionAbout />
-        <SectionSkills />
-
-
+        <Sections/>
+        <Footer/>
       </Flex>
     </>
   )

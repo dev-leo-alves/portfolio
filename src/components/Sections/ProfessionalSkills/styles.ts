@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Skills = styled.div`
+export const ProfessionalSkills = styled.div`
   width: 100vw;
   min-height: 100vh;
   
@@ -8,7 +8,7 @@ export const Skills = styled.div`
   padding-top: 12rem;
   padding-bottom: 4rem;
 
-  background-color: var(--gray-50) ;
+  background-color: var(--gray-50);
 
 
   flex-direction: row;

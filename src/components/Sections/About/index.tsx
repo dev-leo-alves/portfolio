@@ -23,16 +23,16 @@ export function SectionAbout() {
           <h2>{t("section.about.goal.title")}</h2>
           <br />
           <p className="text-italic text-info">
-            <Icon className="quote" color="#589E7D" mr="2" as={FaQuoteLeft} />
+            <Icon className="quote" color="var(--emerald-500)" mr="2" as={FaQuoteLeft} />
             {t("section.about.goal.content")}
-            <Icon color="#589E7D" ml="2" as={FaQuoteRight} />
+            <Icon color="var(--emerald-500)" ml="2" as={FaQuoteRight} />
           </p>
         </div>
 
         <h2>{t("section.about.occupation.title")}</h2>
         <p className="text-info">{t("section.about.occupation.content")}</p>
 
-        <h2>{t("section.about.skills.title")}</h2>
+        <h2>{t("section.about.hard_skills.title")}</h2>
         <HardSkills />
 
 

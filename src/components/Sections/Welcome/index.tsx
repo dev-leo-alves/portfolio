@@ -1,5 +1,5 @@
 import { Text, Image } from "@chakra-ui/react";
-import { Navigation } from "../../../components/Navigation";
+import { Navigation } from "../../Navigation";
 import { useTranslation } from "react-i18next";
 import { Welcome } from "./styles";
 
@@ -22,8 +22,8 @@ export function SectionWelcome() {
               textShadow="2xl"
               bgGradient="to-l"
               bgClip='text'
-              gradientFrom="#CF6B76" 
-              gradientTo="#FED269"
+              gradientFrom="var(--ruby-500)" 
+              gradientTo="var(--gold-500)"
             >
               Leonardo Alves
             </Text>

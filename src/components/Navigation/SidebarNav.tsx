@@ -37,7 +37,7 @@ export function SidebarNav() {
             px="4"
             top="0"
           >
-            <Button bg='#589E7D' size="lg" color="white">
+            <Button bg='var(--emerald-500)' size="lg" color="white">
               <Icon as={FaIndent} />
             </Button>
           </Flex>
@@ -47,7 +47,7 @@ export function SidebarNav() {
             <DrawerHeader
               display="flex"
               flexDirection="row"
-              color="#589E7D"
+              color="var(--emerald-500)"
  
               fontSize="2xl"
             >

@@ -3,6 +3,7 @@ import { SectionAbout } from './components/Section/About';
 
 import { MenuFloat } from './components/MenuFloat';
 import { Flex } from '@chakra-ui/react';
+import { SectionSkills } from './components/Section/Skills';
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
         <MenuFloat/>
         <SectionWelcome />
         <SectionAbout />
+        <SectionSkills />
+
 
       </Flex>
     </>

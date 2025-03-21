@@ -26,7 +26,7 @@ const ptBR = {
                 content: "Desenvolvedor FullStack & Freelancer"
             },
             skills: {
-                title: "Hard Skills que mais utilizo",
+                title: "Principais Tecnologias",
             }
         }
     }

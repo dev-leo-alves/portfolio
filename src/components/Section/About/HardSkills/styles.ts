@@ -60,6 +60,7 @@ export const HardSkillsStyles = styled.div`
       height: 6.5rem;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       border-radius: 1rem;
+      background-color: white;
 
       flex-direction: column;
       align-items: center;
@@ -89,7 +90,6 @@ export const HardSkillsStyles = styled.div`
       .item {
         align-self: center;
         justify-self: center;
-        margin-left: 7rem;
         margin-bottom: 2rem;
 
         .icon {

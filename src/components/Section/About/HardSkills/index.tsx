@@ -25,101 +25,141 @@ export function HardSkills() {
       >
         <SwiperSlide>
           <div className="item">
+            <div className="icon"><i className="devicon-laravel-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">Laravel</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-php-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">PHP</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-wordpress-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">Wordpress</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-python-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">Python</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-django-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">Django</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-flask-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">Flask</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-mysql-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">MySQL</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-mongodb-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">MongoDB</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-postgresql-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">PostgreSQL</Text>
+          </div>
+        </SwiperSlide>
+
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-javascript-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">JavaScript</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-typescript-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">TypeScript</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-react-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">ReactJS</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-jquery-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">JQuery</Text>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="item">
             <div className="icon"><i className="devicon-html5-plain-wordmark colored"></i></div>
-            <Text fontSize="sm" color="gray.900">HTML</Text>
+            <Text fontSize="lg" color="gray.900">HTML</Text>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="item">
-            <div className="icon"><img src="/skills/javascript.png" alt="JavaScript" /></div>
-            <Text fontSize="sm" color="gray.900">JavaScript</Text>
+            <div className="icon"><i className="devicon-css3-plain-wordmark colored"></i></div>
+            <Text fontSize="lg" color="gray.900">CSS</Text>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="item">
-            <div className="icon"><img src="/skills/typescript.svg" alt="TypeScript" /></div>
-            <Text fontSize="sm" color="gray.900">TypeScript</Text>
+            <div className="icon"><i className="devicon-bootstrap-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">Bootstrap</Text>
+          </div>
+        </SwiperSlide>
+        
+        <SwiperSlide>
+          <div className="item">
+            <div className="icon"><i className="devicon-sass-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">Sass</Text>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="item">
-            <div className="icon"><img src="/skills/react.png" alt="React" /></div>
-            <Text fontSize="sm" color="gray.900">ReactJS</Text>
+            <div className="icon"><i className="devicon-swiper-plain colored"></i></div>
+            <Text fontSize="lg" color="gray.900">Swiper</Text>
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/next.png" alt="Next" /></div>
-            <Text fontSize="sm" color="gray.900">NextJS</Text>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/form.png" alt="ReactHook" /></div>
-            <Text fontSize="sm" color="gray.900">React Hook Form</Text>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/query.png" alt="Query" /></div>
-            <Text fontSize="sm" color="gray.900">React Query</Text>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/nodejs.png" alt="NodeJS" /></div>
-            <Text fontSize="sm" color="gray.900">NodeJS</Text>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/typeorm.png" alt="TypeORM" /></div>
-            <Text fontSize="sm" color="gray.900">TypeORM</Text>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/jest.png" alt="Jest" /></div>
-            <Text fontSize="sm" color="gray.900">Jest</Text>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/chakra.png" alt="ChakraUI" /></div>
-            <Text fontSize="sm" color="gray.900">ChakraUI</Text>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/sass.png" alt="Sass" /></div>
-            <Text fontSize="sm" color="gray.900">Sass</Text>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/styled.png" alt="Styled" /></div>
-            <Text fontSize="sm" color="gray.900">Styled-components</Text>
-          </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <div className="item">
-            <div className="icon"><img src="/skills/canva.png" alt="Canva" /></div>
-            <Text fontSize="sm" color="gray.900">Canva</Text>
-          </div>
-        </SwiperSlide>
+
       </Swiper>
     </HardSkillsStyles>
   );

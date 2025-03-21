@@ -11,8 +11,8 @@ export const GlobalStyle = createGlobalStyle`
     --gray-600: #4A5568;
     --gray-200: #B3B5C6;
     --gray-100: #D1D2DC;
-    --gray-50: #fff;
-
+    --gray-50: #E3EDEB;
+    
     --purple-900: #5429cc;
     --purple-800: #44337A;
     --purple-700: #553C9A;
@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 
     --emerald-500: #589E7D;
     --emerald-600: #408861;
+    --emerald-800: #1B3A34;
     --ruby-500: #CF6B76;
     --gold-500: #FED269;
 
@@ -61,7 +62,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     overflow-x: hidden;
-    background-color: var(--gray-800);
+    background-color: var(--emerald-800);
   }
 
   button {

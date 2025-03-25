@@ -2,18 +2,18 @@ import { Flex } from "@chakra-ui/react";
 
 import { ItemSkill } from "./ItemSkill";
 
-import { ProfessionalSkills } from "./styles";
+import { Professional } from "./styles";
 
 import {DevProductivity, Programming, Hello, Preparation} from "../../../assets/illustrations"
 
 import { useTranslation } from "react-i18next";
 
-export function SectionProfessionalSkills() {
+export function SectionProfessional() {
   const [t] = useTranslation("global");
 
 
   return (
-    <ProfessionalSkills id="professional_skills">
+    <Professional id="professional">
       <h1>  {t("section.professional_skills.h1")}</h1>
       <Flex direction="column">
         <ItemSkill
@@ -49,6 +49,6 @@ export function SectionProfessionalSkills() {
           text={t("section.professional_skills.problem_solving.text")}
         />
       </Flex>
-    </ProfessionalSkills>
+    </Professional>
   );
 }

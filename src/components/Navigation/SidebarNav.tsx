@@ -43,12 +43,11 @@ export function SidebarNav() {
           </Flex>
         </DrawerTrigger>
 
-          <DrawerContent bg="gray.900" p="4" zIndex="200">
+          <DrawerContent bg="var(--emerald-800)" p="4" zIndex="200">
             <DrawerHeader
               display="flex"
               flexDirection="row"
               color="var(--emerald-500)"
- 
               fontSize="2xl"
             >
               <DrawerTitle  textStyle="2xl">Navegue</DrawerTitle>
@@ -60,7 +59,7 @@ export function SidebarNav() {
                 fontSize="lg"
               >
                 <ItemSidebarNav href="about" text={t("navigation.about")} />
-                <ItemSidebarNav href="services" text={t("navigation.services")} />
+                <ItemSidebarNav href="professional" text={t("navigation.professional")} />
                 <ItemSidebarNav href="portfolio" text={t("navigation.portfolio")}/>
                 <ItemSidebarNav href="contact" text={t("navigation.contact")} />
               </Stack>

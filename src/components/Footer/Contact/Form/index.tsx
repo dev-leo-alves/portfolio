@@ -53,7 +53,7 @@ export function Form(){
             type="submit"
             borderRadius="full"
             bg="var(--emerald-800)"
-            color="var(--emerald-500)"
+            color="var(--gray-50)"
 
             size="lg"
             transition="0.2s"

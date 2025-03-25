@@ -1,7 +1,7 @@
 const en = {
     navigation: {
         about: "WHO AM I",
-        services: "WHAT I DO",
+        professional: "WHAT I DO",
         portfolio: "PORTFOLIO",
         contact: "CONTACT",
     },

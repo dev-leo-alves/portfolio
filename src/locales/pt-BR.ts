@@ -1,7 +1,7 @@
 const ptBR = {
     navigation: {
         about: "QUEM EU SOU",
-        services: "O QUE FAÇO",
+        professional: "PROFISSIONAL",
         portfolio: "PORTFÓLIO",
         contact: "CONTATO",
     },
@@ -19,7 +19,7 @@ const ptBR = {
             steve_jobs: "Você pode encarar um erro como uma besteira a ser esquecida ou como um resultado que aponta uma nova direção.",
             goal: {
                 title: "Meu objetivo",
-                content: "Apaixonado por tecnologia e sempre em busca da próxima grande ideia, meu objetivo é muito mais do que apenas escrever código. Quero criar soluções backend robustas, escaláveis e inteligentes que não só resolvam problemas, mas também tornem a vida mais fácil e os negócios mais ágeis. Cada desafio é uma chance de inovar, aprender e construir um futuro mais tecnológico – e eu estou pronto para isso! 🚀",
+                content: "Apaixonado por tecnologia e sempre em busca da próxima grande ideia, meu objetivo é muito mais do que apenas escrever código. Quero criar soluções backend robustas, escaláveis e inteligentes que não só resolvam problemas, mas também tornem a vida mais fácil e os negócios mais ágeis. Cada desafio é uma chance de inovar, aprender e construir um futuro mais tecnológico.",
             },
             occupation: {
                 title: "Ocupações Atuais",
@@ -30,7 +30,7 @@ const ptBR = {
             }
         },
         professional_skills: {
-            h1: "Meus Diferenciais",
+            h1: "Visão Profissional",
             clean_code: {
                 title: "Código Limpo",
                 text: "Priorizo boas práticas, como modularização, nomeação clara de variáveis e reutilização de componentes, garantindo que cada linha de código seja um investimento no futuro do projeto. Afinal, código bom não é só o que funciona, mas o que qualquer desenvolvedor consegue entender e aprimorar.",

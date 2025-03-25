@@ -26,7 +26,7 @@ export function ItemSkill({ mt, title, text, img }: IItemSkillProps) {
         py="9"
         direction="column"
         boxShadow="2xl"
-        bgColor="#1B3A34"
+        bgColor="var(--emerald-800)"
         borderRadius="2xl"
         align="center"
         justify="center"
@@ -36,11 +36,11 @@ export function ItemSkill({ mt, title, text, img }: IItemSkillProps) {
           bg: 'gray.800',
         }}
       >
-        <Image fill="blue.500" w="8rem" src={img} objectFit="cover" alt="Code" />
+        <Image w="8rem" src={img} objectFit="cover" alt={title} />
 
         <VStack align="center" textAlign="center">
-          <Heading color="#E3EDEB" fontWeight="500" fontSize="xl" fontFamily="Montserrat">{title}</Heading>
-          <Text color="#589E7D" fontWeight="300" fontSize="md">
+          <Heading color="var(--emerald-500)" fontWeight="600" fontSize="xl" fontFamily="Montserrat">{title}</Heading>
+          <Text color="var(--gray-50)" fontWeight="300" fontSize="md">
             {text}
           </Text>
         </VStack>
@@ -60,11 +60,11 @@ export function ItemSkill({ mt, title, text, img }: IItemSkillProps) {
       py="9"
       direction="row"
       boxShadow="2xl"
-      bgColor="#1B3A34"
+      bgColor="var(--emerald-800)"
       borderRadius="2xl"
       align="center"
       justify="space-between"
-      color="#589E7D"
+      color="var(--emerald-500)"
 
       _hover={{
         bg: 'gray.800',

@@ -18,9 +18,7 @@ export function ItemSidebarNav({ href, text }: IItemSidebarNavProps) {
   return (
     <Text
       w="100%"
-      bg="gray.900"
       p="3"
-      borderRadius="lg"
       textStyle="md"
       fontWeight="500"
       onClick={scrollTo}

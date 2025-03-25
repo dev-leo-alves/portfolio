@@ -14,7 +14,6 @@ export function Footer(){
             minH="70vh"
             px="20"
             py={["7", "7", "2"]}
-
             direction={["column", "column", "row"]}
             align="center"
         >
@@ -30,17 +29,14 @@ export function Footer(){
             borderLeftWidth={[0, 0, 2]}
             >
             <Heading
-                bgGradient="to-tr"
-                bgClip='text'
-                gradientFrom="var(--ruby-500)" 
-                gradientTo="var(--gold-500)"
                 fontFamily="Montserrat"
                 fontSize="2xl"
+                color="var(--emerald-500)"
             >
                 Menu
             </Heading>
             <Link onClick={() => scrollToSectionById('about')}>{t("navigation.about")}</Link>
-            <Link onClick={() => scrollToSectionById('services')}>{t("navigation.services")}</Link>
+            <Link onClick={() => scrollToSectionById('professional')}>{t("navigation.professional")}</Link>
             <Link onClick={() => scrollToSectionById('portfolio')}>{t("navigation.portfolio")}</Link>
             <Link onClick={() => scrollToSectionById('contact')}>{t("navigation.contact")}</Link>
             </VStack>
@@ -57,21 +53,17 @@ export function Footer(){
             borderLeftWidth={[0, 0, 2]}
             >
             <Heading
-                 bgGradient="to-tr"
-                 bgClip='text'
-                 gradientFrom="var(--ruby-500)" 
-                 gradientTo="var(--gold-500)"
                  fontFamily="Montserrat"
                  fontSize="2xl"
-                
+                 color="var(--emerald-500)"
             >
                 Redes Sociais
             </Heading>
-            <ChakraLink href="https://linkedin.com/in/luiz-felipe-siqueira-felizatti-00783a1ab/" target="_blank">
+            <ChakraLink href="https://www.linkedin.com/in/leonardo-alves-35a7281a0/" target="_blank">
                 Linkedin
             </ChakraLink>
-            <ChakraLink href="https://github.com/LuizFelipe16" target="_blank">Github</ChakraLink>
-            <ChakraLink href="https://www.instagram.com/luiz_2fs/" target="_blank">Instagram</ChakraLink>
+            <ChakraLink href="https://github.com/dev-leo-alves/" target="_blank">Github</ChakraLink>
+            <ChakraLink href="https://www.instagram.com/__leo.alves/" target="_blank">Instagram</ChakraLink>
             </VStack>
             <VStack
             w={["100%", "100%", "33%"]}
@@ -86,17 +78,14 @@ export function Footer(){
             textAlign={["center", "center", "start"]}
             >
             <Heading
-                bgGradient="to-tr"
-                bgClip='text'
-                gradientFrom="var(--ruby-500)" 
-                gradientTo="var(--gold-500)"
                 fontFamily="Montserrat"
                 fontSize="2xl"
+                color="var(--emerald-500)"
             >
                 Entre em Contato
             </Heading>
-            <Text>(19) 98952 2121</Text>
-            <Text>felipefelizatti215@gmail.com</Text>
+            <Text>+55 (11) 97555-1708</Text>
+            <Text>leo.alvesoliveira2000@gmail.com</Text>
             </VStack>
         </Flex>
         <Flex

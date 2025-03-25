@@ -30,7 +30,7 @@ export const About = styled.div`
     border-bottom: 10px solid var(--gray-900);
 
     transition: 0.2s;
-    animation: blinker_circle 3s infinite both;
+    /* animation: blinker_circle 3s infinite both; */
   }
 
   @keyframes blinker_circle {

@@ -21,24 +21,20 @@ export const Welcome = styled.main`
 
   .img-d-element {
     background: transparent;
-    position: absolute;
     object-fit: cover;
-    left: 60px;
-    top: 100px;
     animation: entry_content 6s normal both;
   }
 
   .content {
-    width: 47rem;
     height: 100%;
-
-    right: 0;
+    display: flex;
     padding: 0.5rem;
-    
-    position: absolute;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    width: 45rem;
+    margin: 0 auto;
+    
 
     .title-gradient {
       animation: entry_content 6s normal both;

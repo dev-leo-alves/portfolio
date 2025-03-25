@@ -14,6 +14,7 @@
         align="center"
         justify="center"
         bg="var(--gray-50)"
+
       >
         <VStack data-aos="fade-down" data-aos-duration="1500">
           <Heading

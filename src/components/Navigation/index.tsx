@@ -33,7 +33,7 @@ export function Navigation() {
         spaceX="5"
 >
         <ItemNav href="about" text={t("navigation.about")} />
-        <ItemNav href="services" text={t("navigation.services")} />
+        <ItemNav href="professional" text={t("navigation.professional")} />
         <ItemNav href="portfolio" text={t("navigation.portfolio")}/>
         <ItemNav href="contact" text={t("navigation.contact")} />
       </HStack>

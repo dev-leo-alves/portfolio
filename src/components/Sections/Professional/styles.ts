@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ProfessionalSkills = styled.div`
+export const Professional = styled.div`
   width: 100vw;
   min-height: 100vh;
   
@@ -23,8 +23,8 @@ export const ProfessionalSkills = styled.div`
   }
 
   h1 {
-    color: var(--gray-900);
-    font-weight: 400;
+    color: var(--emerald-800);
+    font-weight: 500;
     font-size: 1.5rem;
     position: absolute;
   }
@@ -70,6 +70,7 @@ export const ProfessionalSkills = styled.div`
 
       h1 {
         position: static;
+        margin-top: 1.8rem;
       }
     }
 

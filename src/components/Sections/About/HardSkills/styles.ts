@@ -67,7 +67,7 @@ export const HardSkillsStyles = styled.div`
       justify-content: center;
       
       > i {
-        font-size: 8rem;
+        font-size: 5rem;
       }
     }
   }
@@ -95,7 +95,11 @@ export const HardSkillsStyles = styled.div`
         .icon {
           width: 10rem;
           height: 10rem;
+          > i {
+          font-size: 8rem;
         }
+        }
+        
       }
 
       .swiper-pagination {

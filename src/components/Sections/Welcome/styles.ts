@@ -4,20 +4,10 @@ export const Welcome = styled.main`
   width: 100vw;
   min-height: 100vh;
   
-  /* background-image: url('/images/home3-bg.png'); */
   object-fit: cover;
 
   position: relative;
 
-  
-  @keyframes entry_content {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-  }
 
   .img-container{
     width: 30rem;
@@ -69,47 +59,9 @@ export const Welcome = styled.main`
       animation: blinkCursor 0.8s step-end infinite, 
                  typing 3s steps(40, end);
     }
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    } 
-
-    @keyframes blinkCursor {
-      from, to { 
-        border-color: transparent 
-      }
-      50% { 
-        border-color: white; 
-      }
-    }
-
-    
-  @keyframes blinker_circle {
-    0% {
-      margin-right: 0rem;
-      margin-bottom: -7rem;
-    }
-    25% {
-      margin-left: 7rem;
-    }
-    50% {
-      margin-left: 0rem;
-      margin-top: -7rem;
-    }
-    75% {
-      margin-right: 7rem;
-      margin-top: 0rem;
-    }
-    100% {
-      margin-right: 0rem;
-      margin-bottom: -7rem;
-    }
   }
+
+
 
   @media (min-width: 200px) and (max-width: 980px) {
     & {
@@ -145,6 +97,56 @@ export const Welcome = styled.main`
           }
         } 
       }
+    }
+  }
+
+  @keyframes entry_content {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } 
+
+  @keyframes blinkCursor {
+    from, to { 
+      border-color: transparent 
+    }
+    50% { 
+      border-color: white; 
+    }
+  }
+
+    
+  @keyframes blinker_circle {
+    0% {
+      margin-right: 0rem;
+      margin-bottom: -7rem;
+    }
+    25% {
+      margin-left: 7rem;
+    }
+    50% {
+      margin-left: 0rem;
+      margin-top: -7rem;
+    }
+    75% {
+      margin-right: 7rem;
+      margin-top: 0rem;
+    }
+    100% {
+      margin-right: 0rem;
+      margin-bottom: -7rem;
     }
   }
 `;

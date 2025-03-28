@@ -12,9 +12,12 @@ export function SectionWelcome() {
         <Navigation />
         
         <div className="content">
-          <div className="img-d-element" data-aos="zoom-in-left">
-              <Image src="./src/assets/images/mega-rayquaza.gif" alt="3D Rayquaza" />
+          <div className="img-container">
+            <div className="img-d-element">
+                <Image src="./src/assets/images/mega-rayquaza.gif" alt="3D Rayquaza" />
+            </div>
           </div>
+          
             <Text
               className="title-gradient"
               fontSize={['5xl', '6xl', '7xl']}

@@ -17,13 +17,28 @@ export const Welcome = styled.main`
       to {
         opacity: 1;
       }
-    }
-
-  .img-d-element {
-    background: transparent;
-    object-fit: cover;
-    animation: entry_content 6s normal both;
   }
+
+  .img-container{
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+
+    .img-d-element {
+      width: 20rem;
+      height: 20rem;
+
+      background: transparent;
+      object-fit: cover;
+      animation: entry_content 6s normal both, blinker_circle 3s alternate infinite both;
+      overflow: visible;
+    }
+  }
+
 
   .content {
     height: 100%;
@@ -71,6 +86,28 @@ export const Welcome = styled.main`
       50% { 
         border-color: white; 
       }
+    }
+
+    
+  @keyframes blinker_circle {
+    0% {
+      margin-right: 0rem;
+      margin-bottom: -7rem;
+    }
+    25% {
+      margin-left: 7rem;
+    }
+    50% {
+      margin-left: 0rem;
+      margin-top: -7rem;
+    }
+    75% {
+      margin-right: 7rem;
+      margin-top: 0rem;
+    }
+    100% {
+      margin-right: 0rem;
+      margin-bottom: -7rem;
     }
   }
 

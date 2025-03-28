@@ -12,48 +12,111 @@ export const About = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  > img {
-    width: 16rem;
-    height: 16rem;
-
+  .border-container{
+    width: 16.5rem;
+    height: 16.5rem;
     position: absolute;
-    object-fit: cover;
-    background-color: var(--gray-900);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    right: 500px;
-
+    right: 600px;
     border-radius: 100%;
-    border-left: 10px solid var(--emerald-500);
-    border-right: 10px solid var(--emerald-500);
-    border-top: 10px solid var(--gray-900);
-    border-bottom: 10px solid var(--gray-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
 
-    transition: 0.2s;
-    /* animation: blinker_circle 3s infinite both; */
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 100%;
+        border-left: 10px solid var(--emerald-500);
+        border-right: 10px solid var(--emerald-500);
+        border-top: 10px solid var(--gray-900);
+        border-bottom: 10px solid var(--gray-900);
+        box-sizing: border-box;
+        animation: rotate_border 6s linear infinite;
+    }
+
+    .img-container{
+      width: 16rem;
+      height: 16rem;
+      position: relative;
+      border-radius: 100%;
+      overflow: hidden;
+
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+          &.rayquaza-shiny{
+            display: none;
+            opacity: 0;
+          }
+      }
+       
+    }
+
+    &:hover{
+      &::before {
+        animation: rotate_border 2s linear infinite;
+      }
+
+      animation: grow_image 0.3s linear both;
+
+      .img-container{
+      
+        img{
+          &.rayquaza-shiny{
+            display: block;
+            opacity: 1;
+            animation: toggle_image 1s linear both;
+          }
+          &.me{
+            display: none;
+            opacity: 0;
+            animation: toggle_image 1s reverse both;
+          }
+        }
+      }
+    }
+  }
+  
+
+  @keyframes rotate_border {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 
-  @keyframes blinker_circle {
-    0% {
-      margin-right: 0rem;
-      margin-bottom: -7rem;
+  
+  @keyframes grow_image {
+    from {
+      transform: scale(1);
     }
-    25% {
-      margin-left: 7rem;
-    }
-    50% {
-      margin-left: 0rem;
-      margin-top: -7rem;
-    }
-    75% {
-      margin-right: 7rem;
-      margin-top: 0rem;
-    }
-    100% {
-      margin-right: 0rem;
-      margin-bottom: -7rem;
+    to {
+      transform: scale(1.2);
     }
   }
+
+   
+  @keyframes toggle_image {
+    from {
+      opacity: 0;
+
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+  
 
   .infos {
     width: 36rem;
@@ -154,10 +217,25 @@ export const About = styled.div`
       align-items: center;
       gap: 4rem;
 
-      > img {
+      .img-container {
         position: static;
-        animation: none;
-        right: none;
+        width: 10rem;
+        height: 16rem;
+
+        >div{
+          &::before {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 100%;
+            border-left: 7px solid var(--emerald-500);
+            border-right: 7px solid var(--emerald-500);
+            border-top: 7px solid var(--gray-900);
+            border-bottom: 7px solid var(--gray-900);
+            box-sizing: border-box;
+            animation: rotate_border 6s linear infinite;
+        }
+        }
+        
       }
 
       .infos {

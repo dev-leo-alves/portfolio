@@ -34,12 +34,15 @@ export function SectionAbout() {
 
         <h2>{t("section.about.hard_skills.title")}</h2>
         <HardSkills />
-
-
         
       </div>
 
-      <img src="./src/assets/images/me.jpg" alt="Leonardo Alves" />
+      <div className="border-container">
+          <div className="img-container">
+            <img className="me" src="./src/assets/images/me.jpg" alt="Leonardo Alves" />
+            <img className="rayquaza-shiny" src="./src/assets/images/rayquaza-shiny.gif" alt="Rayquaza Shiny" />
+          </div>
+      </div>
 
       <div data-aos={isMobileVersion ? "zoom-in-right" : "zoom-in-left"} data-aos-duration="1000" className="about">
         <h1>{t("section.about.hello")}</h1>

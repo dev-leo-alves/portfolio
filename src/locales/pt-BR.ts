@@ -14,8 +14,8 @@ const ptBR = {
             }
         },
         about: {
-            hello: "Olá,",
-            whoami: "eu sou!",
+            hello: "Oi!",
+            whoami: "Sou Leonardo, desenvolvedor Full-Stack, mas isso você já sabe, também sou fã do universo Pokémon, seja nos jogos clássicos, TCG ou o Go, quando não estou desenvolvendo algum próximo software que vai mudar o mundo (pelo menos o meu), estou curtindo a companhia do meu gatinho Pastrami ou jogando algum indie game promissor.",
             steve_jobs: "Você pode encarar um erro como uma besteira a ser esquecida ou como um resultado que aponta uma nova direção.",
             goal: {
                 title: "Meu objetivo",
@@ -23,7 +23,7 @@ const ptBR = {
             },
             occupation: {
                 title: "Ocupações Atuais",
-                content: "Desenvolvedor FullStack & Freelancer"
+                content: "Desenvolvedor Full-Stack & Freelancer"
             },
             hard_skills: {
                 title: "Principais Tecnologias",

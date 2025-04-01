@@ -68,12 +68,13 @@ export const Welcome = styled.main`
       /* background-image: none; */
       /* background-image: url('/images/welcome-bg.png'); */
       
-      .img-d-element {
-        margin-left: 4rem;
-        position:relative;
-        top: 0;
-        left: 0;
-        width: 18rem;
+      padding-top: 2rem;
+      .img-container{
+        width: 80vw;
+        height: auto;        
+        .img-d-element {
+          animation: none;
+        }
       }
       
       .content {

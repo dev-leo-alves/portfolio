@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 
-import { ItemSkill } from "./ItemSkill";
+import { ItemSkill } from "../../ItemSkill";
 
 import { Professional } from "./styles";
 
@@ -10,7 +10,6 @@ import { useTranslation } from "react-i18next";
 
 export function SectionProfessional() {
   const [t] = useTranslation("global");
-
 
   return (
     <Professional id="professional">

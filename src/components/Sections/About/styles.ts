@@ -15,8 +15,8 @@ export const About = styled.div`
   .border-container{
     width: 16.5rem;
     height: 16.5rem;
-    position: absolute;
-    right: 600px;
+    position: relative;
+    margin: 0 3rem;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -130,8 +130,8 @@ export const About = styled.div`
     h2 {
       font-family: 'JetBrains Mono', monospace;
       color: var(--emerald-500);
-      font-weight: 100;
-      font-size: 1.4rem;
+      font-weight: 500;
+      font-size: 1.6rem;
     }
 
     .text-info {
@@ -139,8 +139,6 @@ export const About = styled.div`
       color: var(--white);
       font-weight: 300;
       font-size: 1rem;
-      
-      margin-bottom: 5rem;
     }
 
     .tec-skills {
@@ -177,8 +175,11 @@ export const About = styled.div`
       }
     }
 
-    .quote {
-      font-size: 2rem !important;
+    .code {
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 500;
+      align-items: center;
     }
   }
 

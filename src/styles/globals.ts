@@ -25,7 +25,8 @@ export const GlobalStyle = createGlobalStyle`
 
     --emerald-500: #589E7D;
     --emerald-600: #408861;
-    --emerald-800: #1B3A34;
+    --emerald-800:#1B3A34;
+
     --ruby-500: #CF6B76;
     --gold-500: #FED269;
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Icon, Link, Box } from "@chakra-ui/react";
 import { animateScroll } from 'react-scroll';
+import { useTranslation } from "react-i18next";
 
 import { BsFillGearFill, BsArrowUpShort } from 'react-icons/bs';
 import { IoMdClose } from 'react-icons/io';
@@ -15,6 +16,7 @@ interface IMenuFloatProps {
 export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
   const [isOpen, setIsOpen] = useState(isMenuOpen);
   const toggleMenu = () => setIsOpen(!isOpen);
+  const [t] = useTranslation("global");
 
   return (
     <MenuTools>
@@ -27,7 +29,7 @@ export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
                     boxShadow="lg"
                     >
                     <Link 
-                        href="https://github.com/dev-leo-alves" 
+                        href={t("links.github")} 
                         target="_blank"
                         >
                         <Icon fontSize={21} as={AiFillGithub} />
@@ -38,7 +40,7 @@ export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
                 className="button-tool"
                 boxShadow="lg">
                     <Link
-                    href="https://www.instagram.com/luiz_2fs/"
+                    href={t("links.instagram")}
                     target="_blank"
                     >
                         <Icon fontSize={21} as={AiOutlineInstagram} />
@@ -50,7 +52,7 @@ export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
                     boxShadow="lg"
                     >
                     <Link
-                    href="https://linkedin.com/in/luiz-felipe-siqueira-felizatti-00783a1ab/"
+                    href={t("links.linkedin")}
                     target="_blank"
                     >
                         <Icon fontSize={21} as={AiFillLinkedin} />

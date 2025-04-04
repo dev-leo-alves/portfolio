@@ -30,6 +30,12 @@ export function Textarea({ text, ...rest }: ITextareaProps) {
         borderColor: 'var(--emerald-800)',
       }}
 
+      _placeholder={{ 
+        color: 'var(--emerald-600)',
+        fontWeight: 600
+        
+      }}
+
       {...rest}
     />
   );

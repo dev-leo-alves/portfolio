@@ -21,17 +21,19 @@
             color="var(--emerald-800)"
             fontWeight="500"
             fontFamily="JetBrains Mono"
+            fontSize="1.5rem"
           >
-            Fale Comigo
+            Bora conversar?
           </Heading>
           <Text
+            fontSize="1.1rem"
             color="var(--emerald-800)"
             fontWeight="300"
             fontFamily="Nunito"
             textAlign="center"
+            marginY="0.8rem"
           >
-            se você ficou com alguma dúvida, preencha os campos abaixo e
-            clique em enviar que entrarei em contato o mais rápido possível.
+            Se ficou alguma dúvida, é só preencher os campos abaixo e clicar em enviar! Te respondo o mais rápido possível.
           </Text>
         </VStack>
 

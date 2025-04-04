@@ -29,6 +29,10 @@ export function Input({ text, ...rest }: IInputProps) {
         borderColor: 'var(--emerald-800)',
       }}
 
+      _placeholder={{ 
+        color: 'var(--emerald-600)',
+       }}
+
       {...rest}
     />
   );

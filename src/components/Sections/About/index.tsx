@@ -19,10 +19,10 @@ export function SectionAbout() {
   return (
     <About id="about">
       <div className="infos">
-        <div className="flex-dir-column" data-aos="fade-down-right" data-aos-duration="1000">
+        <div className="flex-dir-column" data-aos="fade-down-right">
           <h2>{t("section.about.goal.title")}</h2>
           <br />
-          <Text marginBottom="5rem">
+          <Box marginBottom="5rem" display="block">
 
             {(isMobileVersion ? '' : <>
               <div className="code">
@@ -47,22 +47,24 @@ export function SectionAbout() {
               </div>
             </>)}
             
-          </Text>
+          </Box>
         </div>
 
-        <h2>{t("section.about.occupation.title")}</h2>
-        <p className="text-info">{t("section.about.occupation.content")}</p>
-
+        <Box flexDirection="column" marginBottom="2rem">
+          <Text as="h2" marginBottom=".3rem">{t("section.about.occupation.title")}</Text>
+          <p className="text-info">{t("section.about.occupation.content")}</p>
+        </Box>
+        
         {isMobileVersion ? (
         <>
-          <h2>{t("section.about.hard_skills.title")}</h2>
+          <Text as="h2" marginBottom=".5rem">{t("section.about.hard_skills.title")}</Text>
         </>
         ) : ''}
         <HardSkills />
         
       </div>
 
-      <div className="border-container">
+      <div className="border-container" data-aos="flip-up" data-aos-duration="1000">
           <div className="img-container">
             <img className="me" src="./src/assets/images/me.jpg" alt="Leonardo Alves" />
             <img className="rayquaza-shiny" src="./src/assets/images/rayquaza-shiny.gif" alt="Rayquaza Shiny" />

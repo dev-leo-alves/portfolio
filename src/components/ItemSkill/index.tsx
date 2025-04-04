@@ -6,14 +6,16 @@ interface IItemSkillProps {
   text: string;
   img: string;
   mt: string;
+  data_aos: string;
+
 }
 
-export function ItemSkill({ mt, title, text, img }: IItemSkillProps) {
+export function ItemSkill({ mt, title, text, img, data_aos}: IItemSkillProps) {
 
   return (
     <ItemSkillStyles>
       <Stack
-        data-aos="fade-down"
+        data-aos={data_aos}
         data-aos-duration="1000"
         className="item-skill"
         mt={mt}

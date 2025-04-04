@@ -6,6 +6,8 @@ import { I18nextProvider } from 'react-i18next';
 import {resources as locales} from "./locales/index.ts";
 import { Provider } from './components/ui/provider.tsx';
 import { GlobalStyle } from './styles/globals';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -13,6 +15,9 @@ i18next.init({
   fallbackLng: 'en',
   resources: locales,
 })
+
+AOS.init()
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

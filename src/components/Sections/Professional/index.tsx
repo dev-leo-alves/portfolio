@@ -18,10 +18,12 @@ export function SectionProfessional() {
         <ItemSkill
           mt="5rem"
           img={Preparation}
+          data_aos="fade-right"
           title={t("section.professional_skills.planning.title")}
           text={t("section.professional_skills.planning.text")}
         />
         <ItemSkill
+          data_aos="fade-right"
           mt="5rem"
           img={Hello}
           title={t("section.professional_skills.clean_code.title")}
@@ -36,12 +38,14 @@ export function SectionProfessional() {
       </div>
       <Flex direction="column">
         <ItemSkill
+          data_aos="fade-left"
           mt="15rem"
           img={Programming}
           title={t("section.professional_skills.modern_development.title")}
           text={t("section.professional_skills.modern_development.text")}
         />
         <ItemSkill
+          data_aos="fade-left"
           mt="13rem"
           img={DevProductivity}
           title={t("section.professional_skills.problem_solving.title")}

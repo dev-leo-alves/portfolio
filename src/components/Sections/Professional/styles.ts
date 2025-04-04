@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Professional = styled.div`
   width: 100vw;
+  overflow: hidden;
   min-height: 100vh;
   
   padding: 2rem;

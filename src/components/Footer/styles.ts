@@ -40,12 +40,24 @@ export const Container = styled.div`
     .footer-topic{
       width: 100%;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
       text-align: center;
-    }
-     
-  }
+      padding: 10px 0;
+      background-image: linear-gradient(
+        to left,
+        transparent 15%,
+        var(--emerald-500) 50%,
+        var(--emerald-500) 50%,
+        transparent 85%
+      );
+   
+      &:first-child{
+        background: none;
 
+     }
+     
+    }
+  }
 
 
 

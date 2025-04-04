@@ -218,6 +218,11 @@ export const About = styled.div`
       align-items: center;
       gap: 4rem;
 
+      .border-container{
+        width: 16rem;
+        height: 16rem;
+      }
+
       .img-container {
         position: static;
         width: 10rem;

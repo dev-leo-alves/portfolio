@@ -31,6 +31,9 @@ const ptBR = {
                 title: "Ocupações Atuais",
                 content: "Desenvolvedor Full-Stack & Freelancer"
             },
+            curriculum: {
+                title: "Meu Currículo",
+            },
             hard_skills: {
                 title: "Principais Tecnologias",
             }
@@ -55,14 +58,19 @@ const ptBR = {
             }
         },
         portfolio: {
-            h1: "Meu portfólio",
-            h2: "minha experiência de anos fazendo o que mais gosto",
+            h1: "Portfólio",
+            h2: "Meu crescimento profissional fazendo o que mais curto.",
 
         },
-        footer: {
-            created_by: "criado por"
-        }
 
+
+    },
+
+    footer: {
+        created_by: "criado por",
+        contact: {
+
+        }
     }
 };
 

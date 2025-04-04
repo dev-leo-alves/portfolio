@@ -4,13 +4,14 @@ export const Portfolio = styled.div`
   width: 100vw;
   min-height: 100vh;
 
-  /* background-image: url('/images/services-bg.png'); */
+
   object-fit: cover;
   position: relative;
 
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 5rem;
 
   div.header-title {
     flex-direction: column;
@@ -26,12 +27,28 @@ export const Portfolio = styled.div`
     }
 
     > h2 {
-      width: 95%;
       font-family: 'Nunito', sans-serif;
       color: var(--emerald-500);
       font-weight: 100;
       font-size: 1.1rem;
       letter-spacing: 0.15rem;
+    }
+  }
+
+  .swiper-slide-active{
+    border: 3px solid var(--gray-50);
+    transition: 0.6 ease-in-out;
+
+    .card-title{
+      opacity: 0;
+      transition: 0.8s;
+      transition-delay: 1.5s;
+    }
+
+    .card-description{
+      opacity: 1;
+      transform: 0.8s;
+      transition-delay: 1.5s;
     }
   }
 

@@ -23,11 +23,14 @@ export const Professional = styled.div`
     transition: 1s !important;
   }
 
-  h1 {
-    color: var(--emerald-800);
-    font-weight: 500;
-    font-size: 1.5rem;
+  .pro-title {
+    
     position: absolute;
+    h1{
+      color: var(--emerald-800);
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
   }
 
   .line {

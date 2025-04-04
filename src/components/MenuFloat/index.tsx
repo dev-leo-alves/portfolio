@@ -24,40 +24,38 @@ export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
         isOpen && (
           <>
             <Box className="box-tool">
-                <Button
+                <Link href={t("links.github")} target="_blank">
+                  <Button
                     className="button-tool"
                     boxShadow="lg"
-                    >
-                    <Link 
-                        href={t("links.github")} 
-                        target="_blank"
-                        >
-                        <Icon fontSize={21} as={AiFillGithub} />
-                    </Link>
-                </Button>
-
-                <Button
-                className="button-tool"
-                boxShadow="lg">
-                    <Link
+                  >
+                          <Icon fontSize={21} as={AiFillGithub} />
+                  </Button>
+                </Link>
+                <Link
                     href={t("links.instagram")}
                     target="_blank"
                     >
-                        <Icon fontSize={21} as={AiOutlineInstagram} />
-                    </Link>
-                </Button>
-
+                  <Button
+                  className="button-tool"
+                  boxShadow="lg">
+                    
+                          <Icon fontSize={21} as={AiOutlineInstagram} />
+                  </Button>
+                </Link>
+                <Link
+                    href={t("links.linkedin")}
+                    target="_blank"
+                    >
                 <Button
                     className="button-tool"
                     boxShadow="lg"
                     >
-                    <Link
-                    href={t("links.linkedin")}
-                    target="_blank"
-                    >
+                    
                         <Icon fontSize={21} as={AiFillLinkedin} />
-                    </Link>
                 </Button>
+                </Link>
+
             </Box>
 
             <Button

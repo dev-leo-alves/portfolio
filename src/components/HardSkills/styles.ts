@@ -13,7 +13,7 @@ export const HardSkillsStyles = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  z-index: 100;
+  z-index: 1;
       
   padding-top: 1rem;
   padding-left: 3rem;
@@ -31,17 +31,17 @@ export const HardSkillsStyles = styled.div`
     text-align: center;
     transition: 300ms opacity;
     transform: translate3d(0, 0, 0);
-    z-index: 1000;
+    z-index: 1;
   }
 
   .swiper-button-prev,
   .swiper-button-next {
-    position: flex;
+    position: absolute;
     top: 50%;
     width: calc(var(--swiper-navigation-size) / 44 * 27);
     height: var(--swiper-navigation-size);
     margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
-    z-index: 100;
+    z-index: 1;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -113,7 +113,7 @@ export const HardSkillsStyles = styled.div`
         text-align: center;
         transition: 300ms opacity;
         transform: translate3d(0, 0, 0);
-        z-index: 1000;
+        z-index: 1;
       }
     }
   }

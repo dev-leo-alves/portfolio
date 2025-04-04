@@ -18,8 +18,9 @@ export function Footer(){
             <Container
         >
             <VStack
-                className="footer-topic"
+                className="footer-topic"   
             >
+  
                 <Heading
                     fontFamily="Montserrat"
                     fontSize="2xl"

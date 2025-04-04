@@ -13,7 +13,9 @@ export function SectionProfessional() {
 
   return (
     <Professional id="professional">
-      <h1>  {t("section.professional_skills.h1")}</h1>
+      <div className="pro-title" data-aos="zoom-in" data-aos-duration="1000">
+        <h1>  {t("section.professional_skills.h1")}</h1>
+      </div>
       <Flex direction="column">
         <ItemSkill
           mt="5rem"

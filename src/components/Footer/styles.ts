@@ -21,7 +21,7 @@ export const Container = styled.div`
   .footer-topic{
     width:33%;
     height:80%;
-    color: var(--gray-200);
+    color: var(--gray-50);
     font-family:"Montserrat";
     align-items: flex-start;
     justify-content: flex-start;
@@ -50,6 +50,7 @@ export const Container = styled.div`
         var(--emerald-500) 50%,
         transparent 85%
       );
+
    
       &:first-child{
         background: none;

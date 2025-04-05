@@ -1,4 +1,5 @@
-import { Card, Button } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
+import { ProjectCardStyles } from "./styles";
 
 interface IProjectCardProps {
   title: string;
@@ -9,64 +10,23 @@ interface IProjectCardProps {
 export function ProjectCard({ title, description, img}: IProjectCardProps) {
 
   return (
-    <Card.Root 
-      maxW="sm" 
-      overflow="hidden" 
-      position="relative"
-      w="400px"
-      height="520px"
-      bgColor="white"
-      boxShadow="md"
-      transition="1s"
-      userSelect="none"
-      bgImage={img}
-      bgRepeat="no-repeat"
-      bgPos="center"
-      bgSize="cover"
-      >
-      <Card.Body gap="2"
-        display="flex"
-        flexDirection="column"
-        justifyContent="end"
-        h="100%"
-        p="25px 25px 30px"
-      >
-        <Card.Title
-          className="card-title"
-          fontSize="2.5rem"
-          fontWeight="700"
-          opacity="1"
-          color="var(--gray-50)"
-        >{title}</Card.Title>
-        <Card.Description
-          className="card-description"
-          position="absolute"
-          inset="0"
-          w="100%"
-          p="25px 25px 65px"
-          display="flex"
-          flexDirection="column"
-          justifyContent="end"
-          bgColor="rgba(0,0,0,0.5)"
-          backgroundImage="linear-gradient(
-          180deg,
-          transparent
-          transparent
-          rgba(0,0,0,0.6)
-          rgba(0,0,0,0.8)
-          )"
-          color="var(--gray-50)"
-          opacity="0"
-          borderLeft="4px solid var(--emerald-800)"
-          paddingLeft=""
-        >
-          {description}
-        </Card.Description>
-      </Card.Body>
-      <Card.Footer gap="2">
-        <Button variant="solid">Saber mais...</Button>
-        <Button variant="ghost">Acessar projeto</Button>
-      </Card.Footer>
-    </Card.Root>
+    <ProjectCardStyles>
+      <Box className="container" bgImg={img}>
+          <div className="title">
+            <h1>{title}</h1>
+          </div>
+          <div className="content">
+            <div className="description">
+              <h2 className="description-title">
+                {title}
+              </h2>
+              <p className="description-text"> 
+                {description}
+              </p>
+            </div>
+          </div>
+      </Box>
+    </ProjectCardStyles>
+
   );
 }

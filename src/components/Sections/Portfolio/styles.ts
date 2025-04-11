@@ -34,24 +34,26 @@ export const Portfolio = styled.div`
 
   .projects{
     width: 85%;
+    height: 65%;
   }
 
   .swiper{
     width: 100%;
     padding: 0;
   }
+
+  .swiper-wrapper{
+    align-items: center;
+  }
   .swiper-slide{
     position: relative;
     width: 400px;
     height: 520px;
-    background-color: white;
-    box-shadow: 1px 22px 44px rgba(0,0,0,0.2);   
+    background-color: var(--emerald-800);
     transition: 1s;
     user-select: none;
-  }
-  .swiper-slide-active{
-    border: 3px solid var(--gray-50);
-    transition: 0.6s ease-in-out;
+    box-shadow: 0px 0px 10px 1px rgb(88, 158, 125, 0.3);  
+
   }
 
   .swiper-pagination-bullet{
@@ -70,34 +72,41 @@ export const Portfolio = styled.div`
   }
 
   .swiper-slide-active{
+
     .container{
-      .title{
-        h1{
-            opacity: 0;
-            transition: 0.8s;
-            transition-delay: 1.5s;
-        }
-      }
+        
         .content{
+            
+
+            background-color: rgba(0,0,0,0.5);
             opacity: 1;
-            transition: 1s;
-            transition-delay: 2s;
+            transition: 0.4s;
+            transition-delay: 0.6s;
+            
+            .title{
+              h1{
+                opacity: 0;
+                transition: 0.3s;
+                transition-delay: 0.6s;
+              }
+            }
+
             .description{
                 opacity: 1;
-                transform: 0.8s;
-                transition-delay: 1.5s;
+                transition: 0.3s;
+                transition-delay: 0.6s;
 
                 .description-title{
                     transform: translateY(0);
                     opacity: 1;
-                    transition: 1s;
-                    transition-delay: 2.2s;
+                    transition: 0.3s;
+                    transition-delay: 0.6s;
                 }
                 .description-text{
                     transform: translateY(0);
                     opacity: 1;
-                    transition: 1.5s;
-                    transition-delay: 1.8s;
+                    transition: 0.4s;
+                    transition-delay: 0.8s;
                 }
             }
         }

@@ -64,6 +64,13 @@ export function SectionPortfolio() {
               img="url(./src/assets/images/projects/fora.png)" 
             />
           </SwiperSlide>
+          <SwiperSlide>
+            <ProjectCard 
+              title="LCDesigns" 
+              description="Uma descrição dahorinha até" 
+              img="url(./src/assets/images/projects/fora.png)" 
+            />
+          </SwiperSlide>
         </Swiper>
 
       </div>

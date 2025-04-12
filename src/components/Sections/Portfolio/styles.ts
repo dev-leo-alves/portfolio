@@ -6,8 +6,9 @@ export const Portfolio = styled.div`
   position: relative;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 5rem;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 3.5rem;
   overflow: hidden;
 
   div.header-title {
@@ -15,6 +16,7 @@ export const Portfolio = styled.div`
     align-items: center;
     text-align: center;
     gap: 0.5rem;
+ 
 
     > h1 {
       font-family: 'JetBrains Mono', monospace;
@@ -34,17 +36,20 @@ export const Portfolio = styled.div`
 
   .projects{
     width: 85%;
-    height: 65%;
+    height: 75%;
   }
 
   .swiper{
     width: 100%;
     padding: 0;
+   
   }
 
   .swiper-wrapper{
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 3rem;
   }
+
   .swiper-slide{
     position: relative;
     width: 400px;
@@ -52,7 +57,17 @@ export const Portfolio = styled.div`
     background-color: var(--emerald-800);
     transition: 1s;
     user-select: none;
-    box-shadow: 0px 0px 10px 1px rgb(88, 158, 125, 0.3);  
+    box-shadow: none;  
+    border-radius: 1rem;
+
+
+  }
+
+  .swiper-pagination{
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin-left: 1.5rem;
 
   }
 
@@ -61,6 +76,7 @@ export const Portfolio = styled.div`
       height: 16px;
       background-color: var(--gray-50);
       border-radius: 50%;
+ 
   }
 
   .swiper-pagination-bullet-active{
@@ -74,6 +90,9 @@ export const Portfolio = styled.div`
   .swiper-slide-active{
 
     .container{
+      transform: scale(1.1);
+      transition: 0.3s;
+      transition-delay: 0.2s;
         
         .content{
             
@@ -113,7 +132,43 @@ export const Portfolio = styled.div`
     }
 }
 
+@media (min-width: 200px) and (max-width: 980px) {
 
+  .swiper{
+    padding: 0 50px;
+  }
+
+
+
+  div.header-title {
+    > h1 {
+      font-size: 1.5rem;
+    }
+    > h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .swiper-pagination{
+    margin: 0;
+  }
+
+  .swiper-pagination-bullet{
+    width: 14px;
+    height: 14px;
+  }
+
+  .swiper-pagination-bullet-active{
+    width: 28px;
+    border-radius: 14px;
+  }
+}
+
+@media (min-height: 200px) and (max-height: 850px) {
+  .swiper-slide{
+    height: 350px;
+  }
+}
   
   
 `;

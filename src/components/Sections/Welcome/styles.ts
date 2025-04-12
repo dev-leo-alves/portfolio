@@ -65,8 +65,7 @@ export const Welcome = styled.main`
 
   @media (min-width: 200px) and (max-width: 980px) {
     & {
-      /* background-image: none; */
-      /* background-image: url('/images/welcome-bg.png'); */
+  
       
       padding-top: 2rem;
       .img-container{
@@ -86,7 +85,7 @@ export const Welcome = styled.main`
         align-items: center;
 
         > h1 {
-          font-size: 1.1rem;
+          font-size: 1rem;
         }
 
         @keyframes typing {
@@ -152,14 +151,3 @@ export const Welcome = styled.main`
   }
 `;
 
-
-// .back-video {
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   min-width: 100%;
-//   min-height: 100%;
-//   width: auto;
-//   height: auto;
-//   z-index: -100;
-// }

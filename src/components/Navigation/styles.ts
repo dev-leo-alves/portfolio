@@ -24,6 +24,7 @@ const ItemNavStyles = styled.button`
     border-radius: 5rem;
     border: none;
     transition: 0.2s;
+    align-self: flex-start;
   }
 
   &:hover {

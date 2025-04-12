@@ -1,8 +1,11 @@
 import { Flex, VStack, Heading, Text, Link as ChakraLink, useBreakpointValue, Image } from "@chakra-ui/react"
 import { Link, Container } from "./styles"
 import { scrollToSectionById } from "@/utils/scrollToSectionById"
+import { socialLinks } from "@/utils/links"
 import { useTranslation } from "react-i18next";
 import { Contact } from "./Contact";
+
+
 export function Footer(){
     const [t] = useTranslation("global");
     const currentYear = new Date().getFullYear();
@@ -42,13 +45,13 @@ export function Footer(){
                     fontSize="2xl"
                     color="var(--emerald-500)"
                 >
-                    Redes Sociais
+                    {t("footer.social_media")}
                 </Heading>
-                <ChakraLink href={t("links.linkedin")} target="_blank">
+                <ChakraLink href={socialLinks.linkedin} target="_blank">
                     Linkedin
                 </ChakraLink>
-                <ChakraLink href={t("links.github")} target="_blank">Github</ChakraLink>
-                <ChakraLink href={t("links.instagram")} target="_blank">Instagram</ChakraLink>
+                <ChakraLink href={socialLinks.github} target="_blank">Github</ChakraLink>
+                <ChakraLink href={socialLinks.instagram} target="_blank">Instagram</ChakraLink>
             </VStack>
 
             <VStack
@@ -59,7 +62,7 @@ export function Footer(){
                     fontSize="2xl"
                     color="var(--emerald-500)"
                 >
-                    Entre em Contato
+                    {t("footer.contact_me")}
                 </Heading>
                 <Text>+55 (11) 97555-1708</Text>
                 <Text>leo.alvesoliveira2000@gmail.com</Text>
@@ -68,7 +71,7 @@ export function Footer(){
             {!isMobileVersion && <>
                 <VStack>
                 <Image src="./src/assets/images/rayquaza-rocks.gif" h="20rem" />
-                <Text fontSize="1.3rem">Fim. 🤘</Text>
+                <Text fontSize="1.3rem">{t("footer.end")} 🤘</Text>
                 </VStack>
             </>
             }
@@ -90,7 +93,7 @@ export function Footer(){
                 bgGradient="to-l"
                 bgClip='text'
                 gradientFrom="var(--ruby-500)" 
-                gradientTo="var(--gold-500)">created by @Leonardo Alves | {currentYear}</Text>
+                gradientTo="var(--gold-500)">{t("footer.created_by")} @Leonardo Alves | {currentYear}</Text>
         </Flex>
         </>
     )

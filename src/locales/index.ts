@@ -1,4 +1,4 @@
-import en from "./en";
+import enUS from "./en-US";
 import ptBR from "./pt-BR";
 
 export const resources = {
@@ -6,6 +6,6 @@ export const resources = {
         global: ptBR,
     },
     "en": {
-        global: en,
+        global: enUS,
     },
 };

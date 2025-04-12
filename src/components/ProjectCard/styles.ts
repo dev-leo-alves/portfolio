@@ -7,11 +7,13 @@ export const ProjectCardStyles = styled.div`
     inset: 0;
     width: 100%;
     height: 100%;
+    border-radius: 1rem;
     
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    transform: scale(1);
+    box-shadow: 0px 0px 10px 8px rgb(88, 158, 125, 0.3);  
     
 
     .content{
@@ -30,13 +32,16 @@ export const ProjectCardStyles = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        border-radius: 1rem;
+
 
 
         .title{
             position: absolute;
             bottom: 90px;
-
+            align-self: center;
+            
             h1{
                 color: var(--emerald-500);
                 font-size: 2.5rem;
@@ -65,15 +70,13 @@ export const ProjectCardStyles = styled.div`
                 opacity: 1; 
                 line-height: 1.3rem;
                 color: var(--emerald-500);
-                text-shadow: 0px 0px 30px var(--emerald-500);
-
-
+                text-shadow: 0px 0px 10px #000000b3;
             }
         
             .description-text{
                 font-size: 0.9rem;
                 font-weight: 400;
-                line-height: 0.8rem;
+                line-height: 1.2rem;
                 transform: translateY(100%);
                 opacity: 0;
                 color: var(--gray-50);
@@ -84,6 +87,7 @@ export const ProjectCardStyles = styled.div`
         }
 
         .buttons{
+            align-self: center;
             font-size: 0.6rem;
             font-weight: 400;
             gap: 15px;
@@ -92,16 +96,55 @@ export const ProjectCardStyles = styled.div`
                 border-radius: 15px;
                 background-color: var(--emerald-500);
                 height: 20px;
-                width: 110px;
+                width: 115px;
                 box-shadow: 0px 0px 10px 1px rgb(88, 158, 125, 0.5);  
-                line-height: 0.8rem;
+                line-height: 1rem;
             
             }
                 
         }
     }
 
-    
+    @media (min-width: 200px) and (max-width: 980px) {
+        box-shadow: 0px 0px 10px 6px rgb(88, 158, 125, 0.3);  
+        
+        .content{
+            padding: 25px 20px 30px;
+
+            .title{
+                h1{
+                    font-size: 1.8rem;
+                }
+            }
+
+            .description{
+                .description-title{
+                    font-size: 1.8rem;
+                }
+
+                .description-text{
+                    font-size: 1.1rem;
+                }
+            }
+
+            .buttons{
+                font-size: 0.6rem;
+            }
+        }
+        
+
+        
+    }
+
+    @media (min-height: 200px) and (max-height: 850px) {
+        .content{
+            .description{
+                .description-text{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
 }
     
 `

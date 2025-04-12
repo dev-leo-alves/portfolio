@@ -11,12 +11,13 @@ export function SectionPortfolio() {
   //   base: true,
   //   lg: false,
   // });
-
   const [t] = useTranslation("global");
+
+
   
   return (
     <Portfolio id="portfolio">
-      <div className="header-title">
+      <div className="header-title" data-aos="zoom-in-left">
         <h1>
           {t("section.portfolio.h1")}
         </h1>
@@ -29,48 +30,63 @@ export function SectionPortfolio() {
         <Swiper
           modules={[Pagination]}
           grabCursor={true}
-          initialSlide={2}
+          initialSlide={1}
           centeredSlides={true}
-          slidesPerView="auto"
+          slidesPerView={1}
           slideToClickedSlide={true}
           pagination={{ el: ".swiper-pagination", clickable: true }}
           breakpoints={{ 
             320: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 30,
             },
-            430: {
+            630: {
               slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 40,
             },
             1024: {
               slidesPerView: 4,
-              spaceBetween: 20,
+              spaceBetween: 50,
             },
             1280: {
               slidesPerView: 5,
-              spaceBetween: 20,
+              spaceBetween: 50,
             }
           }}
         >
+
+          <SwiperSlide>
+            <ProjectCard 
+              title="Nimbus" 
+              description={t("section.portfolio.project.nimbus")} 
+              img="./src/assets/images/projects/nimbus.png" 
+              project_url="https://nimbus.hubdoincentivo.com.br/"
+              aos_duration={1000}
+
+            />
+          </SwiperSlide>
+
           <SwiperSlide>
             <ProjectCard 
               title="LCDesigns" 
-              description="Uma descrição dahorinha até" 
-              img="url(./src/assets/images/projects/fora.png)" 
+              description={t("section.portfolio.project.lcdesigns")} 
+              img="./src/assets/images/projects/lcdesigns.png" 
+              project_url="https://lcdesigns.vercel.app/"
+              aos_duration={2000}
             />
           </SwiperSlide>
+
           <SwiperSlide>
             <ProjectCard 
-              title="LCDesigns" 
-              description="Uma descrição dahorinha até" 
-              img="url(./src/assets/images/projects/fora.png)" 
+              title="BagdexAPI" 
+              description={t("section.portfolio.project.bagdexapi")}  
+              img="./src/assets/images/projects/bagdexapi.jpg" 
+              aos_duration={3000}
+
             />
           </SwiperSlide>
+
+          <div className="swiper-pagination"></div>
         </Swiper>
 
       </div>

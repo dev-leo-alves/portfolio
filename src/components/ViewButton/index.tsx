@@ -1,15 +1,14 @@
 import { Button, Icon, Link } from "@chakra-ui/react";
-import { AiOutlineDownload } from 'react-icons/ai';
+import { AiOutlineFilePdf } from 'react-icons/ai';
 
-interface DownloadButtonProps {
-  filePath: string;
-  fileName: string;
+interface ViewButtonProps {
+  url: string;
   buttonText?: string;
 }
 
-export function DownloadButton({ filePath, fileName, buttonText = "Download" }: DownloadButtonProps) {
+export function ViewButton({ url, buttonText }: ViewButtonProps) {
   return (
-    <Link href={filePath} download={fileName} target="_blank"   
+    <Link href={url} target="_blank"   
     _hover={{
         textDecor:"none"
         
@@ -30,7 +29,7 @@ export function DownloadButton({ filePath, fileName, buttonText = "Download" }: 
         }}
         >
                 {buttonText}
-                <Icon as={AiOutlineDownload} />
+                <Icon as={AiOutlineFilePdf} />
         </Button>
     </Link>
 

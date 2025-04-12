@@ -2,7 +2,7 @@ import { Icon, useBreakpointValue, Text, Box } from "@chakra-ui/react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { HardSkills } from "../../HardSkills";
-import { DownloadButton } from "@/components/DownloadButton";
+import { ViewButton } from "@/components/ViewButton";
 import { About } from "./styles";
 
 
@@ -62,7 +62,7 @@ export function SectionAbout() {
         data-aos-duration="1600"  
         zIndex={2}>
           <Text as="h2" marginBottom=".3rem">{t("section.about.curriculum.title")}</Text>
-          <DownloadButton filePath="./public/documents/CV-LeonardoAlves.pdf" fileName="CV-LeonardoAlves.pdf"/>
+          <ViewButton url="https://drive.google.com/file/d/1r1XzgPnjrtKS_P_aIrjUVim90HQOYBrP/view?usp=sharing" buttonText={t("section.about.curriculum.button")}/>
         </Box>
         
         {isMobileVersion ? (

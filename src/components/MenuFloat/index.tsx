@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { Button, Icon, Link, Box } from "@chakra-ui/react";
 import { animateScroll } from 'react-scroll';
-import { useTranslation } from "react-i18next";
 
 import { BsFillGearFill, BsArrowUpShort } from 'react-icons/bs';
 import { IoMdClose } from 'react-icons/io';
 import { AiFillLinkedin, AiOutlineInstagram, AiFillGithub } from 'react-icons/ai';
 
 import { MenuTools } from './styles';
+
+import { socialLinks } from "@/utils/links"
+
 
 interface IMenuFloatProps {
   isMenuOpen?: boolean;
@@ -16,7 +18,6 @@ interface IMenuFloatProps {
 export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
   const [isOpen, setIsOpen] = useState(isMenuOpen);
   const toggleMenu = () => setIsOpen(!isOpen);
-  const [t] = useTranslation("global");
 
   return (
     <MenuTools>
@@ -24,7 +25,7 @@ export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
         isOpen && (
           <>
             <Box className="box-tool">
-                <Link href={t("links.github")} target="_blank">
+                <Link href={socialLinks.github} target="_blank">
                   <Button
                     className="button-tool"
                     boxShadow="lg"
@@ -33,7 +34,7 @@ export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
                   </Button>
                 </Link>
                 <Link
-                    href={t("links.instagram")}
+                    href={socialLinks.instagram}
                     target="_blank"
                     >
                   <Button
@@ -44,7 +45,7 @@ export function MenuFloat({ isMenuOpen = true }: IMenuFloatProps) {
                   </Button>
                 </Link>
                 <Link
-                    href={t("links.linkedin")}
+                    href={socialLinks.linkedin}
                     target="_blank"
                     >
                 <Button

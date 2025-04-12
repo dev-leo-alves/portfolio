@@ -1,7 +1,11 @@
  
  import {Stack, VStack, Heading, Text} from "@chakra-ui/react";
  import { Form } from "../Form";
+ import { useTranslation } from "react-i18next";
+ 
  export function Contact(){
+  const [t] = useTranslation("global");
+
     return(<>
     <Stack
         id="contact"
@@ -23,7 +27,7 @@
             fontFamily="JetBrains Mono"
             fontSize="1.5rem"
           >
-            Bora conversar?
+            {t("footer.contact.title")}
           </Heading>
           <Text
             fontSize="1.1rem"
@@ -33,7 +37,7 @@
             textAlign="center"
             marginY="0.8rem"
           >
-            Se ficou alguma dúvida, é só preencher os campos abaixo e clicar em enviar! Te respondo o mais rápido possível.
+            {t("footer.contact.description")}
           </Text>
         </VStack>
 

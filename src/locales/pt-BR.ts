@@ -1,10 +1,7 @@
 const ptBR = {
-    links: {
-        instagram: "https://www.instagram.com/__leo.alves/",
-        linkedin: "https://www.linkedin.com/in/leonardo-alves-35a7281a0/",
-        github: "https://github.com/dev-leo-alves/",
+    loading: {
+        text: "Oi, eu sou..."
     },
-
     navigation: {
         about: "QUEM EU SOU",
         professional: "PROFISSIONAL",
@@ -33,6 +30,7 @@ const ptBR = {
             },
             curriculum: {
                 title: "Meu Currículo",
+                button: "Visualizar"
             },
             hard_skills: {
                 title: "Principais Tecnologias",
@@ -61,6 +59,18 @@ const ptBR = {
             h1: "Portfólio",
             h2: "Meu crescimento profissional fazendo o que mais curto.",
 
+            project: {
+                nimbus: "Nimbus é uma plataforma de gestão de incentivos fiscais e culturais. Contribuí na criação de questionários dinâmicos para o cadastro de projetos, utilizando Laravel para rotas, lógica e validações, Blade para renderização dinâmica, JavaScript e jQuery para interações em tempo real, e MySQL para estruturar perguntas e respostas. O sistema é escalável, permitindo adicionar novos formulários sem alterar o código.",
+                lcdesigns: "Galeria web para apresentar as artes de um Designer de forma dinâmica e responsiva. Utilizei NextJS e ReactJS com TypeScript para performance e organização. ReactHookForm e EmailJS para o envio de mensagens. Swiper para carrosséis interativos. Estilização com Sass e Emotion. Ícones com React Icons e FontAwesome. Conteúdo dinâmico via GraphCMS, integrado com Apollo e GraphQL.",
+                bagdexapi: "BagdexAPI é um projeto em desenvolvimento, inspirado na PokéAPI, focado em fornecer uma RESTful API construída com Laravel. O objetivo é oferecer informações detalhadas sobre o universo do jogo Bagdex, incluindo dados dos Bagmons e outros elementos do jogo. A API será estruturada para facilitar o acesso a essas informações, promovendo uma integração simples e eficiente.",
+                button: {
+                    go_to_project: "Acessar projeto",
+                    development: "Em desenvolvimento",
+                    more_about: "Saiba mais",
+
+                }
+            }
+
         },
 
 
@@ -68,8 +78,29 @@ const ptBR = {
 
     footer: {
         created_by: "criado por",
-        contact: {
+        social_media: "Redes Sociais",
+        contact_me: "Entre em contato",
+        end: "Fim.",
 
+        contact: {
+            title: "Bora conversar?",
+            description: "Se ficou alguma dúvida, é só preencher os campos abaixo e clicar em enviar! Te respondo o mais rápido possível.",
+            form: {
+                name: "Seu nome",
+                email: "Seu email",
+                message: "Escreva sua mensagem...",
+
+                status: {
+                    send: "Enviar",
+                    sending: "Enviando...",
+                    success: "Mensagem enviada com sucesso!",
+                    error: "Ocorreu um problema ao enviar sua mensagem",
+                    server_error: "Erro ao conectar com o servidor.",
+                },
+                validation: {
+                    invalid_mail: "Por favor, insira um email válido."
+                }
+            }
         }
     }
 };

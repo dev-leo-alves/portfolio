@@ -3,9 +3,11 @@ import { FormEvent, useState } from "react";
 import { Textarea } from "./Textarea";
 import { Input } from "./Input";
 import { FormStatus } from "./styles";
+import { useTranslation } from "react-i18next";
 
 
 export function Form(){
+  const [t] = useTranslation("global");
 
     const [formData, setFormData] = useState({
       name: '',
@@ -39,13 +41,13 @@ export function Form(){
       if (!isValidEmail(formData.email)) {
         setStatus({
           type: 'error',
-          message: 'Por favor, insira um email válido.'
+          message: t("footer.contact.form.validation.invalid_mail")
         });
         return;
       }
 
       setIsSubmitting(true);
-      setStatus({ type: 'info', message: 'Enviando...' });
+      setStatus({ type: 'info', message: t("footer.contact.form.status.sending") });
       
       try {
         const response = await fetch('/api/contact', {
@@ -61,19 +63,19 @@ export function Form(){
         if (response.ok) {
           setStatus({
             type: 'success',
-            message: 'Mensagem enviada com sucesso!'
+            message: t("footer.contact.form.status.success")
           });
           setFormData({ name: '', email: '', message: '' });
         } else {
           setStatus({
             type: 'error',
-            message: data.error || 'Ocorreu um problema ao enviar sua mensagem'
+            message: data.error || t("footer.contact.form.status.error")
           });
         }
       } catch (error) {
         setStatus({
           type: 'error',
-          message: 'Erro ao conectar com o servidor.'
+          message: t("footer.contact.form.status.server_error")
         });
         console.error('Erro:', error);
       } finally {
@@ -89,7 +91,7 @@ export function Form(){
               value={formData.name}
               onChange={handleChange}
               name="name"
-              text="Seu Nome"
+              text={t("footer.contact.form.name")}
               w={["100%", "100%", "50%"]}
               required
             />
@@ -97,7 +99,7 @@ export function Form(){
               value={formData.email}
               onChange={handleChange}
               name="email"
-              text="Seu Melhor E-mail"
+              text={t("footer.contact.form.email")}
               w={["100%", "100%", "50%"]}
               pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
               required
@@ -108,7 +110,7 @@ export function Form(){
             value={formData.message}
             onChange={handleChange}
             name="message"
-            text="Escreva sua mensagem..."
+            text={t("footer.contact.form.message")}
             w="100%"
             required
           />
@@ -129,7 +131,7 @@ export function Form(){
               }}
               disabled={isSubmitting}
             >
-              {isSubmitting ? 'Enviando...' : 'Enviar'}
+              {isSubmitting ? t("footer.contact.form.status.sending") : t("footer.contact.form.status.send")}
             </Button>
 
             {status.message && (

@@ -78,6 +78,13 @@ export const Professional = styled.div`
       }
     }
 
+    
+  .pro-title {
+    
+    position: relative;
+    
+  }
+
     .line {
       display: none;
     }

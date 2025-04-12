@@ -27,7 +27,7 @@ export const HardSkillsStyles = styled.div`
 
   .swiper-pagination {
     position: absolute;
-    left: 45%;
+    justify-content: center;
     text-align: center;
     transition: 300ms opacity;
     transform: translate3d(0, 0, 0);
@@ -109,7 +109,6 @@ export const HardSkillsStyles = styled.div`
 
       .swiper-pagination {
         position: absolute;
-        left: 10%;
         text-align: center;
         transition: 300ms opacity;
         transform: translate3d(0, 0, 0);

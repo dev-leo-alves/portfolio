@@ -20,7 +20,7 @@ export function SectionWelcome() {
           
             <Text
               className="title-gradient"
-              fontSize={['5xl', '6xl', '7xl']}
+              fontSize={['4xl', '6xl', '7xl']}
               fontWeight='bold'
               textShadow="2xl"
               bgGradient="to-l"
@@ -39,9 +39,3 @@ export function SectionWelcome() {
     </>
   );
 }
-
-
-
-  // <video className="back-video" autoPlay loop muted playsInline>
-  //   <source src="assets/video.mp4" type="video/mp4"></source>
-  //  </video>

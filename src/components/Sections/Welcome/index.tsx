@@ -14,7 +14,7 @@ export function SectionWelcome() {
         <div className="content">
           <div className="img-container">
             <div className="img-d-element">
-                <Image src="./public/images/mega-rayquaza.gif" alt="3D Rayquaza" />
+                <Image src="./images/mega-rayquaza.gif" alt="3D Rayquaza" />
             </div>
           </div>
           

@@ -59,7 +59,7 @@ export function SectionPortfolio() {
             <ProjectCard 
               title="Nimbus" 
               description={t("section.portfolio.project.nimbus")} 
-              img="./src/assets/images/projects/nimbus.png" 
+              img="./public/images/projects/nimbus.png" 
               project_url="https://nimbus.hubdoincentivo.com.br/"
               aos_duration={1000}
 
@@ -70,7 +70,7 @@ export function SectionPortfolio() {
             <ProjectCard 
               title="LCDesigns" 
               description={t("section.portfolio.project.lcdesigns")} 
-              img="./src/assets/images/projects/lcdesigns.png" 
+              img="./public/images/projects/lcdesigns.png" 
               project_url="https://lcdesigns.vercel.app/"
               aos_duration={2000}
             />
@@ -80,7 +80,7 @@ export function SectionPortfolio() {
             <ProjectCard 
               title="BagdexAPI" 
               description={t("section.portfolio.project.bagdexapi")}  
-              img="./src/assets/images/projects/bagdexapi.jpg" 
+              img="./public/images/projects/bagdexapi.jpg" 
               aos_duration={3000}
 
             />

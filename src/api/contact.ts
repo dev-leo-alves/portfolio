@@ -1,66 +1,56 @@
-// pages/api/contact.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { Resend } from 'resend';
-import i18next from 'i18next';
-import { resources } from '../locales';
 
-type ContactFormData = {
-    nome: string;
-    email: string;
-    mensagem: string;
-};
-
-const resend = new Resend(process.env.RESEND_API_KEY!);
+const RESEND_API_KEY = process.env.RESEND_API_KEY!;
+const DESTINATION_EMAIL = process.env.DESTINATION_EMAIL!;
 
 export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse
 ) {
-    await i18next.init({
-        resources,
-    });
-
     if (req.method !== 'POST') {
-        return res.status(405).json({
-            error: 'Método não permitido.',
-        });
+        return res.status(405).json({ error: 'Método não permitido' });
     }
 
     try {
-        const { nome, email, mensagem } = req.body as ContactFormData;
+        const { name, email, message } = req.body as {
+            name: string;
+            email: string;
+            message: string;
+        };
 
-        if (!nome || !email || !mensagem) {
-            return res.status(400).json({
-                error: 'Todos os campos são obrigatórios',
-            });
+        if (!name || !email || !message) {
+            return res.status(400).json({ error: 'Todos os campos são obrigatórios.' });
         }
 
-        const { error } = await resend.emails.send({
-            from: 'Contato <onboarding@resend.dev>',
-            to: process.env.DESTINATION_EMAIL!,
-            subject: `Nova mensagem de contato de ${nome}`,
-            html: `
-        <p><strong>Nome:</strong> ${nome}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Mensagem:</strong><br/>${mensagem}</p>
-      `,
+        const response = await fetch('https://api.resend.com/emails', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${RESEND_API_KEY}`,
+            },
+            body: JSON.stringify({
+                from: 'Contato <onboarding@resend.dev>',
+                to: [DESTINATION_EMAIL],
+                subject: `Nova mensagem de contato de ${name}`,
+                html: `
+          <p><strong>Nome:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Mensagem:</strong><br/>${message}</p>
+        `,
+                reply_to: email,
+            }),
         });
 
-        if (error) {
-            console.error('Erro ao enviar email:', error);
-            return res.status(500).json({
-                error: "Erro ao enviar email",
-            });
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error('Erro do Resend:', errorText);
+            return res.status(500).json({ error: 'Erro ao enviar o e-mail.' });
         }
 
-        return res.status(200).json({ success: true });
-    } catch (error) {
-        console.error(
-            "Erro ao enviar email",
-            error
-        );
-        return res.status(500).json({
-            error: "Erro ao enviar email",
-        });
+        const data = await response.json();
+        return res.status(200).json({ success: true, messageId: data.id });
+    } catch (err) {
+        console.error('Erro inesperado:', err);
+        return res.status(500).json({ error: 'Erro interno no servidor.' });
     }
 }

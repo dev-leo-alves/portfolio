@@ -98,12 +98,6 @@ const enUS = {
                 },
                 validation: {
                     invalid_mail: "Please enter a valid email address.",
-                    validation: {
-                        invalid_mail: "Please enter a valid email.",
-                        required_fields: "All fields are required.",
-                        method_not_allowed: "Method not allowed.",
-                        send_email_error: "Error sending email"
-                    }
                 }
             }
         }

@@ -70,7 +70,7 @@ export function Footer(){
 
             {!isMobileVersion && <>
                 <VStack>
-                <Image src="./public/images/rayquaza-rocks.gif" h="20rem" />
+                <Image src="./images/rayquaza-rocks.gif" h="20rem" />
                 <Text fontSize="1.3rem">{t("footer.end")} 🤘</Text>
                 </VStack>
             </>

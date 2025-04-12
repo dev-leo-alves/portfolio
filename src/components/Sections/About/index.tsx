@@ -76,8 +76,8 @@ export function SectionAbout() {
 
       <div className="border-container" data-aos="flip-up" data-aos-duration="1000">
           <div className="img-container">
-            <img className="me" src="./public/images/me.jpg" alt="Leonardo Alves" />
-            <img className="rayquaza-shiny" src="./public/images/rayquaza-shiny.gif" alt="Rayquaza Shiny" />
+            <img className="me" src="./images/me.jpg" alt="Leonardo Alves" />
+            <img className="rayquaza-shiny" src="./images/rayquaza-shiny.gif" alt="Rayquaza Shiny" />
           </div>
       </div>
 

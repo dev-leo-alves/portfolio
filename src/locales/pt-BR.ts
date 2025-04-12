@@ -98,7 +98,10 @@ const ptBR = {
                     server_error: "Erro ao conectar com o servidor.",
                 },
                 validation: {
-                    invalid_mail: "Por favor, insira um email válido."
+                    invalid_mail: "Por favor, insira um email válido.",
+                    required_fields: "Todos os campos são obrigatórios.",
+                    method_not_allowed: "Método não permitido.",
+                    send_email_error: "Erro ao enviar email"
                 }
             }
         }
